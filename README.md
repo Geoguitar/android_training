@@ -1,4 +1,4 @@
-# android_training
+# Android Training now!
 
 ![JavaXKotlin](./img_JavaVsKotlin.png)
 
