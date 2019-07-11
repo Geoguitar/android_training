@@ -13,6 +13,6 @@ public class Palindromo {
     }
 
     public String getConteudo() {
-        return conteudo;
+        return conteudo.toLowerCase();
     }
 }
