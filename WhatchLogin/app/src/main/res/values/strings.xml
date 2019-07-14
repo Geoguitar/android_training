@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">WhatchLogin</string>
+    <string name="usuario">Usuário</string>
+    <string name="senha">Senha</string>
+    <string name="login">Logar</string>
+    <string name="bt_Login">Login</string>
 </resources>
