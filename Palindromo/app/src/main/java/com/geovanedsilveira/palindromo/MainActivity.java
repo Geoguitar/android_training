@@ -3,6 +3,7 @@ package com.geovanedsilveira.palindromo;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,6 +13,8 @@ import com.geovanedsilveira.palindromo.domain.Palindromo;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
+    private static final String TAG = "TrainingBook";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +22,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Button btVerificar = findViewById(R.id.bt_verificar); //Casting de Button será redundante
         btVerificar.setOnClickListener(this);
+
+        Log.v(TAG, "log de verbose");
+        Log.d(TAG, "log de debug");
+        Log.i(TAG, "log de info");
+        Log.w(TAG, "log de alerta");
+        Log.e(TAG, "log de erro", new RuntimeException(" testes de erro!"));
+
     }
 
     @Override
