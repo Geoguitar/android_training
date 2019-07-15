@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btLogin = findViewById(R.id.btLogin);
+        final Button btLogin = findViewById(R.id.btLogin);
         btLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             private void alert(String s) {
-                Toast.makeText( s, Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, s, Toast.LENGTH_LONG).show();
             }
         });
     }
